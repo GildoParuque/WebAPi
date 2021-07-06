@@ -47,7 +47,7 @@ namespace WebAPi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDCandidate(int id, DCandidate dCandidate)
         {
-            dCandidate.id = id;
+            dCandidate.id = id; 
 
             _context.Entry(dCandidate).State = EntityState.Modified;
 
